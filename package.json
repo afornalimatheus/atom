@@ -1,0 +1,24 @@
+{
+  "name": "atom",
+  "version": "1.0.0",
+  "description": "atom",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-uglify" : "*",
+    "gulp-watch" : "*",
+    "gulp-cssmin" : "*",
+    "gulp-strip-css-comments" : "*",
+    "gulp-concat" : "*",
+    "gulp-hash-filename" : "*",
+    "gulp-dom-src" : "*",
+    "gulp-git" : "*"
+  }
+}

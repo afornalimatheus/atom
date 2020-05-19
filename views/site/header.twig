@@ -1,0 +1,79 @@
+<div class="header-1">
+    <div class="l-header"></div>
+    <div class="r-header-1"></div>
+</div>
+<div class="header-2">
+    <div class="menu-mobile"></div>
+    <a href="/enter/options"><div class="logo-2"></div></a>
+    <div class="r-header-2">
+        <div class="account">
+            MINHA CONTA
+            <label class="name">
+                CREDINISSAN
+            </label>
+        </div>
+
+        <button class="option-1">
+            <div class="icon-option-chat"></div>
+            <a href="/contact"><div class="text-option">
+                Chat
+                <b>On-Line</b>
+                Agora!
+            </div></a>
+        </button>
+            <a class="hide-pc" href="/logoff">
+                <button class="bt-quit">
+                    <p>Sair</p>
+                </button>
+            </a>
+    </div>
+</div>
+<div class="subheader">
+    <div class="container">
+        <div class="l-2-1">
+            Olá,
+            <label class="name-2">{{name}}</label>
+        </div>
+        
+        <div class="l-2-2">
+            Selecionar contrato
+            <select class="select-default">
+                <option value="Selecione aqui seu contrato para negociação">{{contract}}</option>
+            </select>
+        </div>
+        <div class="l-2-3">
+            <a href="/contact">
+                <button class="option-2-1">
+                    <div class="icon-option-2-1"></div>
+                    <p>Dúvidas</p>
+                </button>
+            </a>
+            <a href="/logoff">
+                <button class="option-2-2">
+                    <div class="icon-option-2-2"></div>
+                    <p>Sair</p>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function () {
+
+    var openmenu = 0;
+    $('.menu-mobile').click(function () {
+        
+        if (openmenu == 0) {
+            
+            $(".r-header-2").show();
+            openmenu = 1;
+            
+        } else {
+            
+            $(".r-header-2").hide();
+            openmenu = 0;
+        }
+    });
+      });
+</script>
